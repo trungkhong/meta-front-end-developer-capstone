@@ -1,0 +1,33 @@
+.Reviewcard {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.content h3 {
+  margin-block: 5px;
+}
+
+.content p {
+  margin-block: 5px;
+  font-size: 14px;
+}
+
+.reviewScore {
+  display: inline-flex;
+  gap: 5px;
+}

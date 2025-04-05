@@ -1,0 +1,13 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading_h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-left: 10px;
+  animation: pulse 1s infinite alternate;
+}

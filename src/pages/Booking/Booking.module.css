@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bookingForm {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+  width: 300px;
+}
+
+.bookingForm input,
+.bookingForm select {
+  height: 30px;
+  color: #ffffff;
+}
+
+.formItem {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.submitButton {
+  box-shadow: none;
+  height: 50px !important;
+  border: 0px;
+  border-radius: 4px;
+  margin-block-start: 1rem;
+  color: #444444 !important;
+}

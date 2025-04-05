@@ -1,0 +1,98 @@
+.intro {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.intro h2 strong {
+  color: #f4ce14;
+  font-size: 36px;
+}
+
+.intro h3 strong {
+  color: #ffffff;
+}
+
+.intro p {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.introWrapper {
+  justify-content: space-between;
+}
+
+.introText {
+  width: 50%;
+}
+
+.specials {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.testimonial {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.testimonial h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.testimonial h2 strong {
+  color: #ffffff;
+}
+
+.testimonialWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.about {
+  width: 100%;
+  padding: 3rem 0;
+
+  .image {
+    position: relative;
+    img:nth-child(2) {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+    }
+  }
+}
+
+.about h2 strong {
+  font-size: 36px;
+}
+
+.image img {
+  box-shadow: 5px 5px 12px rgb(36 36 36 / 37%);
+}
+
+.specialsWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.specialsHeader {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.specialsCards {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
