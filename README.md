@@ -24,6 +24,18 @@ Little Lemon is a Mediterranean restaurant website featuring online menu browsin
 - **Vitest** - Testing framework
 - **React Testing Library** - Component testing
 
+### Preview screenshots
+
+- Home page
+  ![screenshot](public/screenshots/screenshot1.png)
+
+- Menu page
+  ![screenshot](public/screenshots/screenshot2.png)
+
+- Cart & Booking pages
+  ![screenshot](public/screenshots/screenshot3.png)
+  ![screenshot](public/screenshots/screenshot4.png)
+
 ## 🚀 Getting Started
 
 ### Prerequisites
