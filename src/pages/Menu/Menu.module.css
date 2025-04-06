@@ -32,9 +32,3 @@
     grid-template-columns: 1fr;
   }
 }
-
-/* Add this to ensure 3 columns even when fewer than 3 items */
-.listCards::after {
-  content: '';
-  flex: 0 1 calc(33.333% - 28px);
-}

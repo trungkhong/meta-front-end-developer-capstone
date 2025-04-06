@@ -22,9 +22,8 @@ const Card = ({ id, thumbnailUrl, title, description, price }) => {
 
   return (
     <div className={styles.card}>
-      <div className={styles.wrapper}>
-        <img src={thumbnailUrl} alt="food thumbnail" />
-
+      <img src={thumbnailUrl} alt="food thumbnail" />
+      <div className={styles.footerCard}>
         <div className="content">
           <h2>{title}</h2>
           <p>{description}</p>

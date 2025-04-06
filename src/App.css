@@ -10,6 +10,19 @@
   margin: 0 auto;
 }
 
+/* Responsive container */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+}
+
 p,
 a,
 button,
@@ -87,41 +100,39 @@ nav {
   width: 100%;
   display: flex;
   background-color: #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .container.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   flex-flow: row nowrap;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f0f0f0;
-  padding: 0 1rem;
   width: 100%;
-  flex-flow: row nowrap;
-}
-
-footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: row nowrap;
-  padding: 3rem 0;
 }
 
 .menu {
   display: inline-flex;
   gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu .nav-item {
   margin: 0;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu .nav-item:hover {
+  color: #f4ce14;
 }
 
 .ant-scroll-number-only-unit {
@@ -156,4 +167,57 @@ footer .container {
 
 .yellow-btn:hover {
   opacity: 0.8;
+}
+
+/* Mobile menu toggle - add this button in the Nav component */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .container.nav {
+    padding: 0.5rem;
+  }
+
+  .home-logo {
+    width: 150px;
+  }
+
+  .menu {
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .home-logo {
+    width: 120px;
+  }
 }

@@ -36,6 +36,12 @@ Little Lemon is a Mediterranean restaurant website featuring online menu browsin
   ![screenshot](public/screenshots/screenshot3.png)
   ![screenshot](public/screenshots/screenshot4.png)
 
+- Tablet
+  ![screenshot](public/screenshots/screenshot2.png)
+
+- Mobile
+  ![screenshot](public/screenshots/screenshot2.png)
+
 ## 🚀 Getting Started
 
 ### Prerequisites

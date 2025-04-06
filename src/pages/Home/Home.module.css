@@ -18,11 +18,27 @@
 }
 
 .introWrapper {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 .introText {
   width: 50%;
+}
+
+.image {
+  width: 40%;
+  height: auto;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 5px 5px 12px rgb(36 36 36 / 37%);
 }
 
 .specials {
@@ -38,6 +54,7 @@
 .testimonial h2 {
   width: 100%;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .testimonial h2 strong {
@@ -51,26 +68,32 @@
   align-items: stretch;
 }
 
+.testimonialCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
 .about {
   width: 100%;
   padding: 3rem 0;
+}
 
-  .image {
-    position: relative;
-    img:nth-child(2) {
-      position: absolute;
-      top: 2rem;
-      left: 2rem;
-    }
-  }
+.about .image {
+  position: relative;
+}
+
+.about .image img:nth-child(2) {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 80%;
+  height: auto;
 }
 
 .about h2 strong {
   font-size: 36px;
-}
-
-.image img {
-  box-shadow: 5px 5px 12px rgb(36 36 36 / 37%);
 }
 
 .specialsWrapper {
@@ -87,12 +110,72 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 1.5rem;
 }
 
 .specialsCards {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+/* Tablet Responsive Styles */
+@media screen and (max-width: 768px) {
+  .introWrapper {
+    flex-flow: column nowrap;
+  }
+
+  .introText,
+  .image {
+    width: 100%;
+  }
+
+  .specialsCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonialCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about .image img:nth-child(2) {
+    top: 1rem;
+    left: 1rem;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 480px) {
+  .intro h2 strong {
+    font-size: 28px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .specialsHeader {
+    flex-flow: column nowrap;
+    gap: 1rem;
+  }
+
+  .specialsHeader h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .specialsCards,
+  .testimonialCards {
+    grid-template-columns: 1fr;
+  }
+
+  .about .image {
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .about .image img:nth-child(2) {
+    width: 70%;
+  }
 }

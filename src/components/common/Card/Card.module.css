@@ -2,14 +2,20 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
+  /* keep image 100% */
+  align-items: stretch;
   gap: 21px;
   flex: 0 1 calc(33.333% - 28px);
-  padding: 14px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 28px;
+  width: 100%;
+}
+
+.price {
+  color: #495e57;
+  font-weight: 600;
 }
 
 .card:hover {
@@ -22,4 +28,24 @@
   justify-content: center;
   flex-flow: row nowrap;
   width: 100%;
+}
+
+.footerCard {
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .card {
+    flex: 0 1 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    padding: 12px;
+    gap: 14px;
+  }
 }

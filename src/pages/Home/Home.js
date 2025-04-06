@@ -127,7 +127,7 @@ const Home = () => {
           <h2>
             <strong>TESTIMONIALS</strong>
           </h2>
-          <div className={styles.specialsCards}>
+          <div className={styles.testimonialCards}>
             {reviewCardList.map((item) => (
               <ReviewCard
                 key={item.slug}
