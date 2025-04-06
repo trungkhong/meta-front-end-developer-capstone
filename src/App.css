@@ -1,3 +1,9 @@
+/* Add body style to accommodate fixed navbar */
+body {
+  padding-top: 75px; /* Adjust based on your navbar height */
+  margin: 0;
+}
+
 #root {
   max-width: 100%;
   background-color: #ffffff;
@@ -100,10 +106,14 @@ nav {
   width: 100%;
   display: flex;
   background-color: #f0f0f0;
-  position: sticky;
+  position: fixed; /* Change from sticky to fixed */
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 75px; /* Set explicit height */
+  align-items: center;
 }
 
 .container.nav {
@@ -151,6 +161,9 @@ nav {
 
 .main {
   flex: 1;
+  min-height: calc(100vh - 75px); /* Account for navbar height */
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .yellow-btn {
@@ -200,8 +213,8 @@ nav {
   }
 
   .menu {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 75px; /* Match navbar height */
     left: 0;
     right: 0;
     flex-direction: column;
@@ -210,7 +223,7 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: none;
     width: 100%;
-    z-index: 1000;
+    z-index: 999;
   }
 
   .menu.show {
