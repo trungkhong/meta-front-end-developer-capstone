@@ -14,9 +14,27 @@
 }
 
 .listCards {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  width: 100%;
+}
+
+/* Responsive breakpoints */
+@media screen and (max-width: 768px) {
+  .listCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .listCards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Add this to ensure 3 columns even when fewer than 3 items */
+.listCards::after {
+  content: '';
+  flex: 0 1 calc(33.333% - 28px);
 }

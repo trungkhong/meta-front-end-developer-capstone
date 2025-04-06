@@ -1,0 +1,94 @@
+.cart {
+  padding: 2rem 0;
+}
+
+.emptyCart {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.cartItems {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+
+.cartItem img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.itemDetails {
+  flex: 1;
+}
+
+.itemDetails h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.itemDetails p {
+  margin: 0.25rem 0;
+}
+
+.removeButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cartSummary {
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 14px;
+  width: 100%;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  gap: 14px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.clearButton {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: center;
+  width: 100%;
+}

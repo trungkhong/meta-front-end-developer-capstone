@@ -4,5 +4,22 @@
   justify-content: center;
   align-items: center;
   gap: 21px;
-  flex: 0 1 calc(25% - 1em);
+  flex: 0 1 calc(33.333% - 28px);
+  padding: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 28px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+  display: inline-flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  width: 100%;
 }

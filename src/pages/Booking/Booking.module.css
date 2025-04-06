@@ -8,12 +8,9 @@
 }
 
 .bookingForm {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: stretch;
-  gap: 1rem;
-  width: 300px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .bookingForm input,
@@ -30,10 +27,57 @@
 }
 
 .submitButton {
-  box-shadow: none;
   height: 50px !important;
-  border: 0px;
-  border-radius: 4px;
-  margin-block-start: 1rem;
-  color: #444444 !important;
+  font-size: 16px !important;
+  background-color: #f4ce14 !important;
+  color: #495e57 !important;
+  border: none !important;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  background-color: #e9c512 !important;
+  color: #333333 !important;
+}
+
+/* Override Ant Design default styles */
+:global(.ant-form-item-label > label) {
+  color: #495e57 !important;
+  font-weight: 500;
+}
+
+:global(.ant-input),
+:global(.ant-picker),
+:global(.ant-select-selector),
+:global(.ant-input-number) {
+  border-radius: 8px !important;
+}
+
+:global(.ant-form-item) {
+  margin-bottom: 20px !important;
+}
+
+.bookingPage {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.bookingPageTitle {
+  text-align: center;
+}
+
+.confirmedBooking {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.confirmedBooking h2 {
+  color: #495e57;
+  margin-bottom: 1rem;
+}
+
+.confirmedBooking p {
+  margin-bottom: 0.5rem;
+  color: #333;
 }

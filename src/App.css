@@ -10,9 +10,10 @@
   margin: 0 auto;
 }
 
-*,
 p,
 a,
+button,
+span,
 li,
 h1,
 h2,
@@ -121,6 +122,10 @@ footer .container {
 
 .menu .nav-item {
   margin: 0;
+}
+
+.ant-scroll-number-only-unit {
+  color: #ffffff;
 }
 
 .home-logo {

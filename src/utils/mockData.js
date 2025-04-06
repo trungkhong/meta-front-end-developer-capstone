@@ -26,7 +26,7 @@ export const menuItems = [
   {
     id: 3,
     title: 'Lemon Dessert',
-    category: 'main',
+    category: 'dessert',
     thumbnailUrl: '/assets/images/foods/lemon_dessert_thumb.jpg',
     type: 'dessert',
     rating: 4.5,
@@ -50,8 +50,8 @@ export const menuItems = [
   {
     id: 5,
     title: 'coffee',
-    category: 'coffee',
-    type: 'drink',
+    category: 'drink',
+    type: 'coffee',
     rating: 4.2,
     price: 100,
     img: '/assets/images/foods/coffee.jpg',

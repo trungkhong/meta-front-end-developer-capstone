@@ -13,22 +13,28 @@ import styles from './Home.module.css';
 
 const cardList = [
   {
+    id: 1,
     slug: 'greek-salad',
     title: 'Greek Salad',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
     thumbnailUrl: '/assets/images/foods/greek_salad_thumb.jpg',
+    price: 250,
   },
   {
+    id: 2,
     slug: 'pasta',
     title: 'Pasta',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
     thumbnailUrl: '/assets/images/foods/pasta_thumb.jpg',
+    price: 200,
   },
   {
+    id: 3,
     slug: 'pork-grilled',
     title: 'Pork Grilled',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
     thumbnailUrl: '/assets/images/foods/pork_grilled_thumb.jpg',
+    price: 300,
   },
 ];
 
@@ -36,28 +42,28 @@ const reviewCardList = [
   {
     slug: 'review-1',
     name: 'Monica',
-    message: 'It’s very delicious, variable dishes!',
+    message: `It's very delicious, variable dishes!`,
     avatarUrl: '/assets/images/avatar/avatar1.png',
     reviewScore: 5,
   },
   {
     slug: 'review-2',
     name: 'Dustin',
-    message: 'It’s very delicious, variable dishes!',
+    message: `It's very delicious, variable dishes!`,
     avatarUrl: '/assets/images/avatar/avatar2.png',
     reviewScore: 5,
   },
   {
     slug: 'review-3',
     name: 'Mina',
-    message: 'It’s very delicious, variable dishes!',
+    message: `It's very delicious, variable dishes!`,
     avatarUrl: '/assets/images/avatar/avatar3.png',
     reviewScore: 5,
   },
   {
     slug: 'review-4',
     name: 'Tim',
-    message: 'It’s very delicious, variable dishes!',
+    message: `It's very delicious, variable dishes!`,
     avatarUrl: '/assets/images/avatar/avatar4.png',
     reviewScore: 4,
   },
@@ -105,9 +111,11 @@ const Home = () => {
             {cardList.map((item) => (
               <Card
                 key={item.slug}
+                id={item.id}
                 thumbnailUrl={item.thumbnailUrl}
                 title={item.title}
                 description={item.description}
+                price={item.price}
               />
             ))}
           </div>
